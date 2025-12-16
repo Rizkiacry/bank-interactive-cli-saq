@@ -55,7 +55,57 @@ Proses dalam sistem terdiri dari:
 == Flowchart
 
 #figure(
-  image("../media/32-flowchart.png")
+  image("/media/321-flowchart-main.png"),
+  caption: "Diagram Alur Utama"
+)
+
+=== Flowchart Pembuatan Akun
+
+#figure(
+  image("/media/322-flowchart-buat-akun.png"),
+  caption: "Diagram Alur Pembuatan Akun"
+)
+
+=== Flowchart Setor Tunai
+
+#figure(
+  image("/media/323-flowchart-setor-tunai.png"),
+  caption: "Diagram Alur Setor Tunai"
+)
+
+=== Flowchart Tarik Tunai
+
+#figure(
+  image("/media/324-flowchart-tarik-tunai.png"),
+  caption: "Diagram Alur Tarik Tunai"
+)
+
+=== Flowchart Tampil Akun
+
+#figure(
+  image("/media/325-flowchart-tampil-akun.png"),
+  caption: "Diagram Alur Tampil Akun"
+)
+
+=== Flowchart Ubah Akun
+
+#figure(
+  image("/media/326-flowchart-ubah-akun.png"),
+  caption: "Diagram Alur Ubah Akun"
+)
+
+=== Flowchart Hapus Akun
+
+#figure(
+  image("/media/327-flowchart-hapus-akun.png"),
+  caption: "Diagram Alur Hapus Akun"
+)
+
+=== Flowchart Tampil Semua Akun
+
+#figure(
+  image("/media/328-flowchart-tampil-semua.png"),
+  caption: "Diagram Alur Tampil Semua Akun"
 )
 
 == Algoritma
