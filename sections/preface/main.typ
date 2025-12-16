@@ -64,8 +64,8 @@
 = Daftar Isi
 #outline(title: none)
 
-// = Daftar Gambar
-// #outline(title: none, target: figure.where(kind: "gambar"))
+= Daftar Gambar
+#outline(title: none, target: figure.where(kind: image))
 //
 // = Daftar Tabel
 // #outline(title: none, target: figure.where(kind: "tabel"))

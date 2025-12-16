@@ -1,14 +1,3 @@
-#import "@preview/codly:0.2.0": *
-#show: codly-init.with()
-
-#set document(
-  title: "Sistem Manajemen Akun Bank",
-  author: "Mahasiswa Algoritma dan Pemrograman I"
-)
-
-#set text(font: "Times New Roman", size: 12pt)
-#set page(numbering: "1")
-
 // Title Page
 #align(center)[
   #text(size: 18pt, weight: "bold")[SISTEM MANAJEMEN AKUN BANK]
