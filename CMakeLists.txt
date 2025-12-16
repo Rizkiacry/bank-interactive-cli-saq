@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.12)
+project(algo C CXX)
+file(GLOB SRCS *.c *.cpp)
+foreach(src ${SRCS})
+  get_filename_component(name ${src} NAME_WE)
+  add_executable(${name} ${src})
+endforeach()
