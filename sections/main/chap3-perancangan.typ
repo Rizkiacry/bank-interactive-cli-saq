@@ -113,7 +113,7 @@ Proses dalam sistem terdiri dari:
 === Pseudocode Utama Program
 
 #figure(
-  image("../media/331-pseudocode-utama.png")
+  image("/media/331-pseudocode-utama.png")
 )
 
 === Pseudocode Fungsi-Fungsi Pendukung
@@ -121,29 +121,29 @@ Proses dalam sistem terdiri dari:
 ==== Pseudocode initialize_account
 
 #figure(
-  image("../media/3321-pseudocode-initialize.png")
+  image("/media/3321-pseudocode-initialize.png")
 )
 
 ==== Pseudocode find_available_slot
 
 #figure(
-  image("../media/3322-pseudocode-find-slot.png")
+  image("/media/3322-pseudocode-find-slot.png")
 )
 
 ==== Pseudocode find_account_idx
 
 #figure(
-  image("../media/3323-pseudocode-find-idx.png")
+  image("/media/3323-pseudocode-find-idx.png")
 )
 
 ==== Pseudocode deposit
 
 #figure(
-  image("../media/3324-pseudocode-deposit.png")
+  image("/media/3324-pseudocode-deposit.png")
 )
 
 ==== Pseudocode withdraw
 
 #figure(
-  image("../media/3325-pseudocode-withdraw.png")
+  image("/media/3325-pseudocode-withdraw.png")
 )
