@@ -1,5 +1,7 @@
 #import "config.typ": *
 
+#let in_appendix = state("in_appendix", false)
+
 #set document(
   title: [#report_type #author_name],
   author: author_name,
@@ -7,14 +9,11 @@
 #set page(
   margin: page_margin,
 paper: page_layout,
-  ..if report_type == "Laporan Proyek Akhir" {
-  } else {
-    (
       header: context [
         #grid(
           columns: (1fr, 1fr),
           align(left)[#lab_name],
-    align(right)[Lap-#report_number / #date_of_release],
+    align(right)[Project-#report_number / #date_of_release],
         )
       ],
   background: place(
@@ -28,8 +27,6 @@ paper: page_layout,
       )
     )
   )
-    )
-  }
 )
 #set text(
   font: root_font,
@@ -49,17 +46,15 @@ paper: page_layout,
 )
 
 // === Cover
-#if report_type == "Laporan Proyek Akhir" {
-  include "sections/cover/cover_report-1.typ"
-} else {
-  include "sections/cover/cover_proposal.typ"
-}
+#include "sections/cover/cover_proposal.typ"
 
 // === Preface
 #set figure.caption(separator: " ")
 #set figure(numbering: it => {
   [#counter(heading).get().at(0).#it]
-})
+}, kind: "image", supplement: "Gambar")
+
+#show figure: set block(breakable: true)
 #set table.header(repeat: true)
 #show heading.where(
   level: 1
@@ -73,7 +68,7 @@ paper: page_layout,
     ])
   ]
 ]
-#show figure: set block(breakable: true)
+
 #show figure.where(
   kind: "tabel"
 ): set figure.caption(position: top)
@@ -101,23 +96,15 @@ paper: page_layout,
 }
 
 #set page(numbering: "i")
-#if report_type == "Laporan Proyek Akhir" {
-  include "sections/preface/statements.typ"
-}
 
 #set page(
-  ..if report_type == "Laporan Proyek Akhir" {
-  } else {
-    (
       footer: context [
         #grid(
           columns: (1fr, 1fr),
           align(left)[#author_name],
-          align(right)[#author_id],
+          align(right)[#counter(page).display()],
         )
       ]
-    )
-  }
 )
 
 #set math.equation(numbering: "(1)", supplement: "Persamaan")
@@ -126,6 +113,7 @@ paper: page_layout,
 
 // === Main Content
 #set page(numbering: "1")
+#counter(page).update(1)
 #set heading(numbering: "1.")
 #show heading.where(
   level: 1
@@ -183,27 +171,13 @@ paper: page_layout,
 }
 
 #include "sections/main/chap1-pendahuluan.typ"
-// #include "sections/main/chap1.typ"
 
-// === Cover
-// #if report_type == "Laporan Proyek Akhir" {
-// } else {
-//   include "sections/cover/cover_proposal.typ"
-// }
 
 #include "sections/main/chap2-landasan-teori.typ"
 #include "sections/main/chap3-perancangan.typ"
 #include "sections/main/chap4-hasil-dan-pembahasan.typ"
 #include "sections/main/chap5-kesimpulan.typ"
 
-// #include "sections/main/chap2.typ"
-// #include "sections/main/chap3.typ"
-// #if report_type == "Laporan Proyek Akhir" {
-//   include "sections/main/chap4-testing-analysis.typ"
-//   include "sections/main/chap5.typ"
-// } else {
-//   include "sections/main/chap4-cost-time-mgnt.typ"
-// }
 
 #set heading(numbering: none)
 #show heading.where(

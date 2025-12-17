@@ -55,56 +55,56 @@ Proses dalam sistem terdiri dari:
 == Flowchart
 
 #figure(
-  image("/media/321-flowchart-main.png"),
+  image("/media/321-flowchart-main.jpeg", width: 80%),
   caption: "Diagram Alur Utama"
 )
 
 === Flowchart Pembuatan Akun
 
 #figure(
-  image("/media/322-flowchart-buat-akun.png"),
+  image("/media/322-flowchart-buat-akun.jpeg", width: 80%),
   caption: "Diagram Alur Pembuatan Akun"
 )
 
 === Flowchart Setor Tunai
 
 #figure(
-  image("/media/323-flowchart-setor-tunai.png"),
+  image("/media/323-flowchart-setor-tunai.jpeg", width: 80%),
   caption: "Diagram Alur Setor Tunai"
 )
 
 === Flowchart Tarik Tunai
 
 #figure(
-  image("/media/324-flowchart-tarik-tunai.png"),
+  image("/media/324-flowchart-tarik-tunai.jpeg", width: 80%),
   caption: "Diagram Alur Tarik Tunai"
 )
 
 === Flowchart Tampil Akun
 
 #figure(
-  image("/media/325-flowchart-tampil-akun.png"),
+  image("/media/325-flowchart-tampil-akun.jpeg", width: 80%),
   caption: "Diagram Alur Tampil Akun"
 )
 
 === Flowchart Ubah Akun
 
 #figure(
-  image("/media/326-flowchart-ubah-akun.png"),
+  image("/media/326-flowchart-ubah-akun.jpeg", width: 80%),
   caption: "Diagram Alur Ubah Akun"
 )
 
 === Flowchart Hapus Akun
 
 #figure(
-  image("/media/327-flowchart-hapus-akun.png"),
+  image("/media/327-flowchart-hapus-akun.jpeg", width: 80%),
   caption: "Diagram Alur Hapus Akun"
 )
 
 === Flowchart Tampil Semua Akun
 
 #figure(
-  image("/media/328-flowchart-tampil-semua.png"),
+  image("/media/328-flowchart-tampil-semua.jpeg", width: 80%),
   caption: "Diagram Alur Tampil Semua Akun"
 )
 
@@ -113,7 +113,8 @@ Proses dalam sistem terdiri dari:
 === Pseudocode Utama Program
 
 #figure(
-  image("/media/331-pseudocode-utama.png")
+  image("/media/331-pseudocode-utama.png", width: 80%),
+  caption: [Pseudocode Utama Program.]
 )
 
 === Pseudocode Fungsi-Fungsi Pendukung
@@ -121,29 +122,34 @@ Proses dalam sistem terdiri dari:
 ==== Pseudocode initialize_account
 
 #figure(
-  image("/media/3321-pseudocode-initialize.png")
+  image("/media/3321-pseudocode-initialize.png", width: 80%),
+  caption: [Pseudocode Fungsi `initialize_account`.]
 )
 
 ==== Pseudocode find_available_slot
 
 #figure(
-  image("/media/3322-pseudocode-find-slot.png")
+  image("/media/3322-pseudocode-find-slot.png", width: 80%),
+  caption: [Pseudocode Fungsi `find_available_slot`.]
 )
 
 ==== Pseudocode find_account_idx
 
 #figure(
-  image("/media/3323-pseudocode-find-idx.png")
+  image("/media/3323-pseudocode-find-idx.png", width: 80%),
+  caption: [Pseudocode Fungsi `find_account_idx`.]
 )
 
 ==== Pseudocode deposit
 
 #figure(
-  image("/media/3324-pseudocode-deposit.png")
+  image("/media/3324-pseudocode-deposit.png", width: 80%),
+  caption: [Pseudocode Fungsi `deposit`.]
 )
 
 ==== Pseudocode withdraw
 
 #figure(
-  image("/media/3325-pseudocode-withdraw.png")
+  image("/media/3325-pseudocode-withdraw.png", width: 80%),
+  caption: [Pseudocode Fungsi `withdraw`.]
 )

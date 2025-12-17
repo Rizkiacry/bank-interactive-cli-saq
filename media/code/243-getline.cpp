@@ -10,7 +10,6 @@ int main() {
   string name;
   cout << "Enter your name: ";
   getline(cin, name); // Baca string dengan spasi
-  cout << "Name: " << name << ", Age: " << age
-       << endl;
+  cout << "Name: " << name << ", Age: " << age << endl;
   return 0;
 }
